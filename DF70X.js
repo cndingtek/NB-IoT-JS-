@@ -1,14 +1,16 @@
-/* @Author: www.dingte.com
+/* @Author: www.dingtek.com
  * @Date: 2021-12-14 14:08:59
  * @LastEditors: CNDINGTEK
  * @LastEditTime: 2022-08-18 15:37:16
- * @Description: Demo code for DT320 TCP Socket upload message parsing. Not including downlink command.
+ * @Description: Demo code for waste bin level sensor DF701/703 TCP Socket upload message parsing. Not including downlink command.
  */
 //While integration with user system, please remark below.
-let payload = [
-    0x80,0x00,0x01,0x02,0x1E,0x06,0x49,0x00,0x1B,0x00,0x00,0x01,0x01,0x01,0x5F,0x00,0x80,0x54,0xC4,0x00,0x01,0x18,0x68,0x82,0x10,0x43,0x03,0x88,0x76,0x81
-];
-//While integration with user system, please remark below.
+//let payload = [0x80,0x00,0x01,0x02,0x1E,0x06,0x49,0x00,0x1B,0x00,0x00,0x01,0x01,0x01,0x5F,0x00,0x80,0x54,0xC4,0x00,0x01,0x18,0x68,0x82,0x10,0x43,0x03,0x88,0x76,0x81];
+/************************************************************************************
+ * 
+ * Below are functions for codec which should put into user code.
+ *   
+ * *********************************************************************************/
 let metadata = { "Integration Name": "TCP Binary Integration" };
 var result = "";
 
